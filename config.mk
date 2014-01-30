@@ -10,18 +10,18 @@ DEST?=          $(HOME)
 
 .PHONY: all
 all:  
-  @echo Usage:
-  @echo make install - Run default command set in the Makefile \(default is to symlink\)
+	@echo Usage:
+	@echo make install - Run default command set in the Makefile \(default is to symlink\)
 
 .PHONY: install $(FILES)
 install: $(FILES)
 
 $(FILES):
-  @echo $(DEST)/$@
-  @if test ! -d `dirname "$(DEST)/$@"`; then \
-    mkdir -p `dirname "$(DEST)/$@"`; \
-  fi
-  @if test -e "$(DEST)/$@"; then \
-    rm "$(DEST)/$@"; \
-  fi
-  @$(COMMAND) "$(CURDIR)/$@" "$(DEST)/$@"
+	@echo $(DEST)/$@
+	@if test ! -d `dirname "$(DEST)/$@"`; then \
+		mkdir -p `dirname "$(DEST)/$@"`; \
+	fi
+	@if test -e "$(DEST)/$@"; then \
+		rm "$(DEST)/$@"; \
+	fi
+	@$(COMMAND) "$(CURDIR)/$@" "$(DEST)/$@"
