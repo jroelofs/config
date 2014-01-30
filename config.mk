@@ -1,3 +1,5 @@
+# Borrowed from: http://blog.ostanin.org/2012/01/25/managing-config-files-with-git/
+
 GIT_LS_COMMAND= git ls-files | grep -v -e Makefile  
 GIT_FILES=      $(shell $(GIT_LS_COMMAND))   # GNU Make compatible  
 GIT_FILES!=     $(GIT_LS_COMMAND)            # BSD Make compatible
