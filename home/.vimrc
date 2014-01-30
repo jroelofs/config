@@ -26,7 +26,8 @@ set nospell
 
 "Set the colorscheme
 "colorscheme elflord
-"colorscheme desert
+colorscheme desert
+set background=dark
 
 "Tabs are shown as 4 spaces
 set expandtab
