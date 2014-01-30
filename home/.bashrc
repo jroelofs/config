@@ -11,3 +11,7 @@ alias grep="grep --color=always"
 
 export SVN_EDITOR="vim"
 
+# MacPorts Bash shell command completion
+if [ -f /opt/local/share/git-core/git-prompt.sh ]; then
+    . /opt/local/share/git-core/git-prompt.sh
+fi
