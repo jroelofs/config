@@ -2,9 +2,17 @@ command Wq wqa
 command W w
 command Q qa
 
+"Turn off word wrap
 set nowrap
 
+"Allow mouse interaction
 set mouse=a
+
+"Turn off bell sounds
+set noerrorbells
+set novisualbell
+set t_vb=
+autocmd! GUIEnter * set vb t_vb=
 
 "Set the encoding to utf-8
 set encoding=utf-8
@@ -95,7 +103,7 @@ set statusline=%<%F+0x%O\ %(%h%m%r%)%{cscflag}%=0x%B\ %l,%c%V\ %P
 
 "Highlight trailing whitespace
 highlight OverLength ctermbg=red ctermfg=white guibg=red guifg=white
-match OverLength '\%81v.*'
+match OverLength '\%82v.*'
 
 "flag problematic whitespace (trailing and spaces before tabs)
 "Note you get the same by doing let c_space_errors=1 but
