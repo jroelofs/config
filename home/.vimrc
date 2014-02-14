@@ -112,6 +112,23 @@ match OverLength '\%82v.*'
 "match RedundantSpaces /\s\+$\| \+\ze\t/
 let c_space_errors=1
 
+"---------- Tablegen file highlighting -----------------
+augroup filetype
+  au! BufRead,BufNewFile *.td    set filetype=tablegen
+augroup END
+
+"---------- LLVM file highlighting ---------------------
+augroup filetype
+  au! BufRead,BufNewFile *.ll    set filetype=llvm
+augroup END
+
+"---------- Makefile highlighing -----------------------
+augroup filetype
+  au! BufRead,BufNewFile *Makefile*  set filetype=make
+augroup END
+" Don't expand tabs in Makefiles
+autocmd Filetype make set noexpandtab
+
 "---------- GCC md file highlighting -------------------
 au BufRead,BufNewFile *.md set filetype=lisp
 au! Syntax lisp setf lisp
