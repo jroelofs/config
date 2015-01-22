@@ -1,2 +1,2 @@
 [helpers]
-diff-cmd = /Users/jroelofs/bin/diffwrap.sh
+diff-cmd = /Users/jroelofs/bin/diffwrap.py

@@ -145,6 +145,9 @@ au BufRead,BufNewFile *.ispc set filetype=ispc
 au BufRead,BufNewFile *.rkt set filetype=lisp
 "au! Syntax lisp source ${HOME}/.vim/lisp.vim
 
+"---------- CMake Syntax Highlighting ----------
+au BufRead,BufNewFile *.cmake,CMakeLists.txt setf cmake
+
 "---------- Key Mappings ----------
 map <silent> <C-k> :sh<cr>
 "----------------------------------
