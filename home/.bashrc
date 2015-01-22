@@ -11,7 +11,7 @@ alias ls="ls -G"
 alias la="ls -Glah"
 alias less="less -R"
 alias grep="grep --color=always --exclude-dir=\".svn\""
-alias svnpatch="svn diff --diff-cmd=diff -x -U999"
+alias svndiff="svn diff --diff-cmd=diff -x -U999"
 
 export EDITOR="vim"
 export SVN_EDITOR="vim"
