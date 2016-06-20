@@ -134,6 +134,12 @@ set statusline=%<%F+0x%O\ %(%h%m%r%)%{cscflag}%=0x%B\ %l,%c%V\ %P
 "match RedundantSpaces /\s\+$\| \+\ze\t/
 let c_space_errors=1
 
+"---------- Python Tabstops -----------------
+augroup filetype
+  au! BufRead,BufNewFile *.py    set tabstop=4 shiftwidth=4
+augroup END
+
+
 "---------- Tablegen file highlighting -----------------
 augroup filetype
   au! BufRead,BufNewFile *.td    set filetype=tablegen
