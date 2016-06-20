@@ -2,6 +2,8 @@ command Wq wqa
 command W w
 command Q qa
 
+execute pathogen#infect()
+
 "Turn off word wrap
 set nowrap
 
