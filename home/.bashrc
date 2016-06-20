@@ -10,6 +10,7 @@ alias la="ls -Glah"
 alias less="less -R"
 alias grep="grep --color=always --exclude-dir=\".svn\""
 alias svndiff="svn diff --diff-cmd=diff -x -U999"
+alias llview='view -c "set filetype=llvm"'
 
 export EDITOR="vim"
 export SVN_EDITOR="vim"
