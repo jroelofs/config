@@ -82,7 +82,7 @@ set list
 
 "Turn syntax highlighting on
 syntax on
-hi Comment ctermfg=6
+hi Comment ctermfg=28
 
 "No visual bell
 set novisualbell
