@@ -41,8 +41,28 @@ set background=dark
 
 "Tabs are shown as 4 spaces
 set expandtab
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
+
+" Optional
+" C/C++ programming helpers
+augroup csrc
+  au!
+  autocmd FileType *      set nocindent smartindent
+  autocmd FileType c,cpp  set cindent
+augroup END
+
+" Set a few indentation parameters. See the VIM help for cinoptions-values for
+" details.  These aren't absolute rules; they're just an approximation of
+" common style in LLVM source.
+set cinoptions=:0,g0,(0,Ws,l1
+
+" Add and delete spaces in increments of `shiftwidth' for tabs
+set smarttab
+
+" Highlight syntax in programming languages
+syntax on
+
 
 "Set starting width of line number columns
 set numberwidth=2
