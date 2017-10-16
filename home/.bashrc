@@ -33,3 +33,4 @@ shopt -s histappend                      # append to history, don't overwrite it
 export PATH=$PATH:/opt/local//Library/Frameworks/Python.framework/Versions/3.6/bin
 alias mgit="trezor-agent -v jroelofs@build1-trusty-cs.mentor -- git"
 
+set -o ignoreeof
