@@ -10,6 +10,8 @@ set nowrap
 "Allow mouse interaction
 set mouse=a
 
+set autochdir
+
 "Turn off bell sounds
 set noerrorbells
 set novisualbell
