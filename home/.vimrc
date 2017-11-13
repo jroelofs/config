@@ -247,3 +247,6 @@ set pastetoggle=<F11>
 
 map <C-K> :pyf /Users/jroelofs/workdir/svn/clang/tools/clang-format/clang-format.py<cr>
 imap <C-K> <C-o>:pyf /Users/jroelofs/workdir/svn/clang/tools/clang-format/clang-format.py<cr>
+
+" Store swap files in fixed location, not current directory.
+set dir=~/.vimswap//,/var/tmp//,/tmp//,.
